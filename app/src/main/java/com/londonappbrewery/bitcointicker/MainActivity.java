@@ -52,13 +52,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                //Log.d("Bitcoin", "Selected " + parent.getItemAtPosition(position));
+                Log.d("Bitcoin", "Selected " + parent.getItemAtPosition(position));
                 letsDoSomeNetworking(BASE_URL + parent.getItemAtPosition(position));
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-                //Log.d("BitCoin","Nothing Selected");
+                Log.d("BitCoin","Nothing Selected");
                 mPriceTextView.setText("...Select Currency...");
             }
         });
